@@ -17,28 +17,13 @@ jobs:
       run: echo "::set-output name=date::$(date +'%Y-%m-%d %H:%M')"
 
     - name: Build Packages
-      uses: kopp/build-aur-packages@24955279fbccc5c98ede0c186c5937eb0e9f9668
+      uses: kopp/build-aur-packages@master
       with:
         packages: >
-          android-studio
-          arduino-ide-bin
-          azure-cli
-          conan
-          getmail6
-          google-cloud-cli
-          micronucleus-git
-          microsoft-edge-stable-bin
-          neovim-symlinks
-          onedrive-abraunegg
-          python-selenium
-          selenium-manager
-          uv-bin
-          jmtpfs
-          qtfm
-          skypeforlinux-stable-bin
-          tp-battery-mode
-          vdhcoapp-bin
-          visual-studio-code-bin
+          pacolog
+          wsl2-ssh-agent
+          xdg-desktop-portal-gtk-dummy
+          yay
 
     - name: List generated Files
       run: ls -1 > ${{ github.workspace }}/files.txt
