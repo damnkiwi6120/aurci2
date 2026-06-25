@@ -24,6 +24,7 @@ jobs:
           wsl2-ssh-agent
           xdg-desktop-portal-gtk-dummy
           yay
+          linux-wsl2-waydroid
 
     - name: List generated Files
       run: ls -1 > ${{ github.workspace }}/files.txt
