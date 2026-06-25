@@ -25,6 +25,7 @@ jobs:
           xdg-desktop-portal-gtk-dummy
           yay
           linux-wsl2-waydroid
+          wsl-hello-sudo-bin
 
     - name: List generated Files
       run: ls -1 > ${{ github.workspace }}/files.txt
